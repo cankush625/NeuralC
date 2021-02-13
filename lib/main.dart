@@ -33,17 +33,17 @@ class MyApp extends StatelessWidget {
                 ),
                 textTheme: TextTheme(
                   headline6: TextStyle(
-                    fontSize: 6.0.w,
+                    fontSize: 20.0.sp,
                     fontWeight: FontWeight.w500,
                     color: Color(0xFF006270),
                   ),
                   bodyText1: TextStyle(
-                    fontSize: 4.0.w,
+                    fontSize: 14.0.sp,
                     fontWeight: FontWeight.normal,
                     color: Color(0xFF009394),
                   ),
                   button: TextStyle(
-                    fontSize: 5.0.w,
+                    fontSize: 16.0.sp,
                     fontWeight: FontWeight.normal,
                     color: Color(0xFFFFFFFF),
                   ),
