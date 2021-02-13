@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:neuralc/widgets/appbar/appbar.dart';
+import 'package:neuralc/widgets/buttons/gallery_button.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -7,9 +9,10 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: Appbar(context),
       body: SafeArea(
-        child: Text(
-          "Home Screen",
-          style: Theme.of(context).textTheme.bodyText1,
+        child: Column(
+          children: [
+            GalleryButton(context),
+          ],
         ),
       ),
     );

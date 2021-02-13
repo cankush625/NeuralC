@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
                     color: Color(0xFFFFFFFF),
                   ),
                 ),
-                buttonColor: Color(0xFF006270),
+                buttonColor: Color(0xFF009394),
               ),
               initialRoute: '/',
               routes: {
