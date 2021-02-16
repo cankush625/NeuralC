@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:neuralc/widgets/appbar/appbar.dart';
+import 'package:neuralc/widgets/buttons/capture_button.dart';
 import 'package:neuralc/widgets/buttons/gallery_button.dart';
 
 class Home extends StatelessWidget {
@@ -12,6 +13,7 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             GalleryButton(context),
+            CaptureButton(context),
           ],
         ),
       ),
