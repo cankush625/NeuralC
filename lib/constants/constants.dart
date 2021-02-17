@@ -13,3 +13,6 @@ Color captureButtonColor = Color(0xFFe3e3e3);
 double captureButtonHeight = 25.0.h;
 double captureButtonMinWidth = 95.0.w;
 double captureButtonElevation = 0;
+
+// Drawer Icon
+double drawerIconSize = 16.0.sp;

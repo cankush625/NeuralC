@@ -1,13 +1,42 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:sizer/sizer.dart';
+import 'package:neuralc/constants/constants.dart';
 
 // ignore: non_constant_identifier_names
-Widget AppBarDrawer() {
+Widget AppBarDrawer(BuildContext context) {
   return Drawer(
     child: Container(
-      child: Text(
-        'Drawer option',
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: <Widget>[
+          DrawerHeader(
+            child: Text(
+              'NeuralC',
+              style: Theme.of(context).textTheme.headline6,
+            ),
+            decoration: BoxDecoration(
+              color: Theme.of(context).accentColor,
+            ),
+          ),
+          ListTile(
+            title: Text(
+              'Features',
+              style: Theme.of(context).textTheme.bodyText1,
+            ),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: Text(
+              'About',
+              style: Theme.of(context).textTheme.bodyText1,
+            ),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+        ],
       ),
     ),
   );
@@ -22,7 +51,7 @@ Widget DrawerIcon(BuildContext context) {
       },
       icon: Icon(
         FontAwesome5Solid.stream,
-        size: 16.0.sp,
+        size: drawerIconSize,
         color: Theme.of(context).appBarTheme.iconTheme.color,
       ),
     ),

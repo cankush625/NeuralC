@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Appbar(context),
-      drawer: AppBarDrawer(),
+      drawer: AppBarDrawer(context),
       body: SafeArea(
         child: Column(
           children: [
