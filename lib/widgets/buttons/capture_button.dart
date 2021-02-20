@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:neuralc/constants/constants.dart';
+import 'package:image_picker/image_picker.dart';
 
 // ignore: non_constant_identifier_names
 Widget CaptureButton(BuildContext context) {
@@ -14,8 +15,15 @@ Widget CaptureButton(BuildContext context) {
       minWidth: captureButtonMinWidth,
       elevation: captureButtonElevation,
       onPressed: () {
-        print("Capture button pressed");
+        getImage();
       },
     ),
   );
+}
+
+final picker = ImagePicker();
+
+Future getImage() async {
+  final image = await picker.getImage(source: ImageSource.camera);
+  return image;
 }
