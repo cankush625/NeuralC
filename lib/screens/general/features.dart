@@ -20,7 +20,7 @@ class Features extends StatelessWidget {
                 ),
                 Text(
                   'Features: ',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.headline5,
                 ),
                 SizedBox(
                   height: 2.0.h,
