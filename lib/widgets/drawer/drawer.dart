@@ -20,6 +20,15 @@ Widget AppBarDrawer(BuildContext context) {
           ),
           ListTile(
             title: Text(
+              'Home',
+              style: Theme.of(context).textTheme.bodyText1,
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, '/');
+            },
+          ),
+          ListTile(
+            title: Text(
               'Features',
               style: Theme.of(context).textTheme.bodyText1,
             ),
