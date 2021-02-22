@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:neuralc/constants/constants.dart';
+import 'package:image_picker/image_picker.dart';
 
 // ignore: non_constant_identifier_names
 Widget GalleryButton(BuildContext context) {
@@ -14,8 +15,15 @@ Widget GalleryButton(BuildContext context) {
       height: galleryButtonHeight,
       minWidth: galleryButtonMinWidth,
       onPressed: () {
-        print('Gallery button pressed');
+        print(getImage());
       }
     ),
   );
+}
+
+final picker = ImagePicker();
+
+Future getImage() async {
+  final image = await picker.getImage(source: ImageSource.gallery);
+  return image;
 }
