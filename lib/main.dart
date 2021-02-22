@@ -33,6 +33,11 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 textTheme: TextTheme(
+                  headline5: TextStyle(
+                    fontSize: 15.0.sp,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF006270),
+                  ),
                   headline6: TextStyle(
                     fontSize: 20.0.sp,
                     fontWeight: FontWeight.w500,
