@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neuralc/screens/general/features.dart';
 
 import 'package:neuralc/screens/home/home.dart';
 import 'package:sizer/sizer.dart';
@@ -32,6 +33,11 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 textTheme: TextTheme(
+                  headline5: TextStyle(
+                    fontSize: 15.0.sp,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF006270),
+                  ),
                   headline6: TextStyle(
                     fontSize: 20.0.sp,
                     fontWeight: FontWeight.w500,
@@ -53,6 +59,7 @@ class MyApp extends StatelessWidget {
               initialRoute: '/',
               routes: {
                 '/': (context) => Home(),
+                'features': (context) => Features(),
               },
             );
           },
