@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neuralc/screens/general/about.dart';
 import 'package:neuralc/screens/general/features.dart';
 
 import 'package:neuralc/screens/home/home.dart';
@@ -60,6 +61,7 @@ class MyApp extends StatelessWidget {
               routes: {
                 '/': (context) => Home(),
                 'features': (context) => Features(),
+                'about': (context) => About(),
               },
             );
           },

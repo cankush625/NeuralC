@@ -3,7 +3,7 @@ import 'package:sizer/sizer.dart';
 import 'package:neuralc/widgets/appbar/appbar.dart';
 import 'package:neuralc/widgets/drawer/drawer.dart';
 
-class Features extends StatelessWidget {
+class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +19,32 @@ class Features extends StatelessWidget {
                 height: 2.0.h,
               ),
               Text(
-                'Features: ',
+                'About: ',
+                style: Theme.of(context).textTheme.headline5,
+              ),
+              SizedBox(
+                height: 2.0.h,
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Flexible(
+                    flex: 1,
+                    child: Text(
+                      'This application is developed for assisting the visually impaired'
+                          ' peoples in recognising the surrounding objects and environment.'
+                          ' It can be used in multiple other scenarios like assisting the'
+                          ' children in recognising the objects.',
+                      style: Theme.of(context).textTheme.bodyText1,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 2.0.h,
+              ),
+              Text(
+                'How this app can be used? ',
                 style: Theme.of(context).textTheme.headline5,
               ),
               SizedBox(
@@ -35,7 +60,8 @@ class Features extends StatelessWidget {
                   Flexible(
                     flex: 1,
                     child: Text(
-                      'Generate captions for an image.',
+                      'Assisting the blind using text to speech by real time'
+                          ' responses about the surrounding environment through a camera feed.',
                       style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ),
@@ -54,64 +80,8 @@ class Features extends StatelessWidget {
                   Flexible(
                     flex: 1,
                     child: Text(
-                      'Supports images from camera as well as gallery.',
-                      style: Theme.of(context).textTheme.bodyText1,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 1.0.h,
-              ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    '3. ',
-                    style: Theme.of(context).textTheme.bodyText1,
-                  ),
-                  Flexible(
-                    flex: 1,
-                    child: Text(
-                      'Real time caption generation.',
-                      style: Theme.of(context).textTheme.bodyText1,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 1.0.h,
-              ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    '4. ',
-                    style: Theme.of(context).textTheme.bodyText1,
-                  ),
-                  Flexible(
-                    flex: 1,
-                    child: Text(
-                      'Speak captions from device speakers using text-to-speech.',
-                      style: Theme.of(context).textTheme.bodyText1,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 1.0.h,
-              ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    '5. ',
-                    style: Theme.of(context).textTheme.bodyText1,
-                  ),
-                  Flexible(
-                    flex: 1,
-                    child: Text(
-                      'High availability of service.',
+                      'Assisting young children in recognizing objects as well'
+                          ' as learning the English language.',
                       style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ),
