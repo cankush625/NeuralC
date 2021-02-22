@@ -24,7 +24,7 @@ Widget AppBarDrawer(BuildContext context) {
               style: Theme.of(context).textTheme.bodyText1,
             ),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.pushNamed(context, 'features');
             },
           ),
           ListTile(
